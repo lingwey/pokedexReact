@@ -1,0 +1,135 @@
+.card{
+    width: 100%;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        transform: scale(1.05);
+        transition-duration: 200ms;
+
+        > img{
+            margin-top: -20px;
+            transform: scale(1.15);
+            transition-duration: 300ms;
+            filter: drop-shadow(1px 3px 0 black);
+        }
+    }
+
+    .card_img{
+        width: 160px;
+        margin: 0 auto;
+        z-index: 30;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .sub_card{
+        position: absolute;
+        border-radius: 10px;
+        min-height: 370px;  
+        padding: 15px;
+        width: 100%;
+        margin-top: 100px;
+        padding-top: 15px;
+        border: 1px solid black;
+        box-shadow: 1px 1px 0px hsl(33, 42%, 40%), 2px 2px 0px hsl(33, 42%, 39%),
+        3px 3px 0px hsl(33, 42%, 38%), 4px 4px 0px hsl(33, 42%, 37%),
+        5px 5px 0px hsl(33, 42%, 36%);
+    }
+
+    .card_id {
+        background-color: white;
+        border: 1px solid black;
+        width: auto;
+        padding: 1px 4px;
+        font-size: 0.85rem;
+        border-radius: 5px;
+        display: inline-block;
+        
+    }
+    .card_name {
+        margin-top: 8px;
+        font-size: 1.2rem;
+        display: block;
+        text-transform: capitalize;
+        font-weight: 900;
+        -webkit-text-stroke: 0.4px #ffffff9e;
+        -webkit-text-fill-color: #000;
+    }
+    .card_altura, .card_peso{
+        margin-top: 2px;
+        font-size: 0.75rem;
+        text-transform: capitalize;
+        display: block;
+        color: rgb(51, 94, 43);
+    }
+    .card_habitad{
+        margin-top: 2px;
+        font-size: 0.75rem;
+        text-transform: capitalize;
+        display: block;
+        color: rgb(51, 94, 43);
+    }
+    
+    .div_stats{
+        margin: 4px;
+        width: 100%;
+        padding: 5px;
+    }
+    .item_stat{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .stat_name{
+            width: 90%;
+            text-transform: capitalize;
+            color: #484848;
+        }
+        .stat_numero{
+            width: 22%;
+            text-align: end;
+            color: #484848
+        }
+    }
+
+    .div_tipo_color{
+        display: flex;
+        justify-content: space-between;
+        margin: 6px 0;
+
+        .tipo_color{
+            border-radius: 4px;
+            border: 1px solid black;
+            text-align: center;
+            height: 20px;
+            line-height: 17px;
+            width: 50px;
+            color: white;
+        }
+    }
+
+    .div_evoluciones{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+
+        .item_evolucion{
+            > img {
+                width: 80px;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    transform: scale(1.4);
+                    transition-duration: 200ms;
+                    z-index: 50;
+                }
+            }
+            > h6{
+                text-align: center;
+            }
+        }
+    }
+}

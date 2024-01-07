@@ -1,0 +1,52 @@
+.card_content{
+    width: 1400px;
+    max-width: calc(100% - 30px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 25px;
+    padding-bottom: 30px;
+    
+}
+.seccion_paginacion{
+    display: flex;
+    justify-content:center;
+    margin: 40px 0;
+
+    .div_paginacion{
+        width: auto;
+        background-color: #8e96f1;
+        display: flex;
+        border-radius: 8px;
+        overflow: hidden;
+
+        .item_izquierdo{
+            background-color: #8e96f1;
+            display: grid;
+            place-items: center;
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .item{
+            background-color: #424242;
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            display: grid;
+            place-items: center;
+        }
+
+        .item_derecho{
+            background-color: #8e96f1;
+            display: grid;
+            place-items: center;
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
